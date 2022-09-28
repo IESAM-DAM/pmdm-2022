@@ -1,2 +1,4 @@
 # UT-01 Ejercicio 01
-Práctica con LinearLayouts
+Práctica con vistas:
+- LinearLayouts
+- TextViews
