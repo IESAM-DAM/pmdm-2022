@@ -34,9 +34,12 @@
         android:textStyle="bold"/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        app:srcCompat=""/>
+        android:id="@+id/iconLeon"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:scaleType="fitCenter"
+        android:tint="@color/red"
+        app:srcCompat="@drawable/ic_lion"/>
 
 
 </LinearLayout>
