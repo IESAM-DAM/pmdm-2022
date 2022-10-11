@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ut01.ex03.Ut01Ex03Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        tools:background="@tools:sample/avatars"
+        android:layout_height="@dimen/size_image">
+
+        <TextView
+            tools:text="Pack Sorpresa"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_favorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+        <TextView
+            tools:text="Pack Sorpresa"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -4,16 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="@dimen/vertical_spacing"
+    android:orientation="vertical"
+
     tools:context=".ut01.ex02b.Ut01Ex02bActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_image"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size_image"
-        android:scaleType="centerCrop"
-        tools:src="@tools:sample/avatars" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_image">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            tools:text="Título ..." />
+
+    </RelativeLayout>
+
 
     <TextView
         android:id="@+id/label_title"
@@ -24,7 +45,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/text_title"
         android:textStyle="bold"
-        tools:text="@tools:sample/lorem/random" />
+        tools:text="Título ..." />
 
     <TextView
         android:id="@+id/label_description"
@@ -34,47 +55,50 @@
         tools:text="@tools:sample/lorem/random" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/size_icon"
             android:layout_height="@dimen/size_icon"
-            android:tint="@color/yellow"
-            android:src="@drawable/ic_favorite"/>
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/yellow" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/size_icon"
             android:layout_height="@dimen/size_icon"
-            android:tint="@color/yellow"
-            android:src="@drawable/ic_favorite"/>
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/yellow" />
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/size_icon"
             android:layout_height="@dimen/size_icon"
-            android:tint="@color/yellow"
-            android:src="@drawable/ic_favorite"/>
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/yellow" />
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/size_icon"
             android:layout_height="@dimen/size_icon"
-            android:tint="@color/yellow"
-            android:src="@drawable/ic_favorite"/>
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/yellow" />
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/size_icon"
             android:layout_height="@dimen/size_icon"
-            android:tint="@color/yellow"
-            android:src="@drawable/ic_favorite"/>
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/yellow" />
 
         <LinearLayout
-            android:gravity="right"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="right">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="@dimen/size_icon"
                 android:layout_height="@dimen/size_icon"
-                android:tint="@color/red"
-                android:src="@drawable/ic_favorite"/>
+                android:src="@drawable/ic_favorite"
+                android:tint="@color/red" />
 
         </LinearLayout>
 
