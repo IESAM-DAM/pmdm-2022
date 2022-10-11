@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">PMDM</string>
     <string name="title">Hola Mundo</string>
+
+    <!-- Form -->
+    <string name="form_label_name">Nombre:</string>
+    <string name="form_label_surname">Apellidos:</string>
+    <string name="form_label_save">Guardar</string>
 </resources>

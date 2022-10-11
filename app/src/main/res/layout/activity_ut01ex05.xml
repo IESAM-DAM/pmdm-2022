@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/both_spacing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_image">
+
+        <ImageView
+            tools:background="@tools:sample/avatars"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_image"/>
+
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/both_spacing"
+            android:padding="@dimen/middle_both_spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white_50">
+
+            <TextView
+                tools:text="1º"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_lion"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:text="Chubasquero de Sta. Teresa"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/text_spacing"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/text_subtitle"
+        tools:text="Bar Restaurante El Comienzo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/text_spacing"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/labelPoints"
+            android:layout_alignParentStart="true"
+            tools:text="Total: 2ptos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/labelAvg"
+            tools:text="Media: 4"
+            android:layout_toRightOf="@id/labelPoints"
+            android:layout_marginLeft="@dimen/middle_both_spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:layout_toRightOf="@id/labelAvg"
+            android:src="@drawable/ic_empty_star"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"/>
+
+        <ImageView
+            android:layout_toStartOf="@id/ic_favorite"
+            android:layout_marginRight="@dimen/middle_both_spacing"
+            android:src="@drawable/ic_share"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"/>
+
+        <ImageView
+            android:id="@+id/ic_favorite"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_favorite"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"/>
+
+    </RelativeLayout>
+</LinearLayout>
